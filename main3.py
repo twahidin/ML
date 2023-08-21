@@ -1,10 +1,5 @@
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer
-import av
-import cv2
-import csv
-import time
-import pandas as pd
 from twilio.rest import Client
 import numpy as np 
 import pickle 
@@ -12,14 +7,9 @@ import mediapipe as mp
 import streamlit_antd_components as sac
 from streamlit_antd_components.utils.data_class import BsIcon
 from move import callback, train_callback, train_data_model, initialise_file, analysis_callback, photo_callback
-from sklearn.model_selection import train_test_split
-from sklearn.pipeline import make_pipeline 
-from sklearn.preprocessing import StandardScaler 
-from sklearn.linear_model import LogisticRegression, RidgeClassifier
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from functools import partial
 from PIL import Image
-import threading
+
 
 #variable declaration
 mp_drawing = mp.solutions.drawing_utils
