@@ -5,7 +5,6 @@ import numpy as np
 import pickle 
 import mediapipe as mp
 import streamlit_antd_components as sac
-from streamlit_antd_components.utils.data_class import BsIcon
 from move import callback, train_callback, train_data_model, initialise_file, analysis_callback, photo_callback
 from functools import partial
 from PIL import Image
